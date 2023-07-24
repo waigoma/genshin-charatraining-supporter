@@ -6,6 +6,12 @@
 API を使用しているので、キャラクターが増えても対応可能です。  
 DB に保存するので、いつでも登録されたキャラクターを見返すことが可能です。
 
+# 環境
+Python 3.10  
+
+requirements.txt にインストールが必要なライブラリが記されています。  
+`pip install -r requirements.txt`
+
 # 使い方
 このソースをダウンロードして src > server.py を起動します。  
 localhost:8000/cgi-bin/index.py をブラウザで開きます。  
