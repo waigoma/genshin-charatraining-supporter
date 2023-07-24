@@ -14,8 +14,18 @@ requirements.txt にインストールが必要なライブラリが記されて
 
 # 使い方
 このソースをダウンロードして src > server.py を起動します。  
-localhost:8000/cgi-bin/index.py をブラウザで開きます。  
+http://localhost:8000/cgi-bin/index.py をブラウザで開きます。  
 以上です。
+
+コマンドは、  
+```shell
+pip install -r requirements.txt
+cd src/
+py src/server.py
+```
+
+停止は `ctrl + c` で強制停止してください。  
+(停止まで時間がかかるかもしれません。)
 
 # 使用 API
 [genshin-db-api](https://github.com/theBowja/genshin-db-api)
