@@ -6,6 +6,8 @@
 API を使用しているので、キャラクターが増えても対応可能です。  
 DB に保存するので、いつでも登録されたキャラクターを見返すことが可能です。
 
+- [ｺﾋﾟﾍﾟで使いたい人向け](#全部ｺﾋﾟﾍﾟで使いたいって？)
+
 # 環境
 Python 3.10  
 
@@ -20,7 +22,6 @@ http://localhost:8000/cgi-bin/index.py をブラウザで開きます。
 コマンドは、  
 ```shell
 pip install -r requirements.txt
-cd src/
 py src/server.py
 ```
 
@@ -29,6 +30,21 @@ py src/server.py
 
 # 使用 API
 [genshin-db-api](https://github.com/theBowja/genshin-db-api)
+
+## 全部ｺﾋﾟﾍﾟで使いたいって？
+* Windows (venv)
+  * パスの通し方によっては `py` コマンドではなく、`python` とか `python3` かもです。  
+  * git が無くて `clone` できない人は GitHub の Code から Download Zip を選ぶといいかもです。
+```shell
+git clone https://github.com/waigoma/genshin-charatraining-supporter
+cd ./genshin-charatraining-supporter/
+
+python -m venv venv/
+. /venv/bin/activate
+
+pip install -r requirements.txt
+py ./src/server.py
+```
 
 ## commit 少ない。
 学校の課題で作ったものを移植してきたので commit 数は少なくなっています。
